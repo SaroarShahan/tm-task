@@ -9,7 +9,7 @@ function filter(elem) {
     demoFile.version = elem.version;
     demoFile.description = elem.description;
 
-    fs.writeFile('demo.json', JSON.stringify(demoFile), () => console.log("demo.json file created successfully"));
+    fs.writeFile('demo.json', JSON.stringify(demoFile, null, 4), () => console.log("demo.json file created successfully"));
 }
 
 
